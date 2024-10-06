@@ -8,7 +8,7 @@ import Section from '../components/Section'
 import Separator from '../components/Separator'
 import Slider from '../components/Slider'
 
-export const zoom = atomWithStorage( 'zoom', 1 )
+export const zoom = atomWithStorage( 'zoom', 1.4 )
 export const fullscreen = atom( false )
 
 const Interface = () => {

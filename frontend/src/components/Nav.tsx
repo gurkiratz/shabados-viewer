@@ -1,3 +1,4 @@
+import { Info, Settings, Table2 } from 'lucide-react'
 import { useState } from 'react'
 import { createUseStyles } from 'react-jss'
 import { Link } from 'react-router-dom'
@@ -33,6 +34,9 @@ const useStyles = createUseStyles( {
     '& + $button': {
       marginLeft: '1.5rem',
     },
+    display: 'inline-flex',
+    gap: '0.3rem',
+    alignItems: 'center',
   },
   '@media (prefers-color-scheme: dark)': {
     nav: {
@@ -58,25 +62,28 @@ const Nav = () => {
       <Content>
         <div className={classes.flex}>
           <Link to="/" className={classes.button}>
-            <Logo />
+            <Logo size={30} />
           </Link>
-          <div>
+          <div style={{ display: 'flex' }}>
             <span
               className={classes.button}
               onClick={() => setVisibleCollections( true )}
             >
+              <Table2 color="white" size={16} />
               Collections
             </span>
             <span
               className={classes.button}
               onClick={() => setVisibleAbout( true )}
             >
+              <Info color="white" size={16} />
               About
             </span>
             <span
               className={classes.button}
               onClick={() => setVisibleInterface( true )}
             >
+              <Settings color="white" size={16} />
               Interface
             </span>
           </div>

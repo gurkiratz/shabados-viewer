@@ -116,7 +116,7 @@ const About = () => {
         </p>
         <h1>Related</h1>
         <p><a href="https://docs.shabados.com/viewer/" className={classes.link}>Viewer Docs</a></p>
-        <p><a href="https://docs.shabados.com/database/" className={classes.link}>Database Docs</a></p>
+        <p><a href="https://shabados.com/docs/database/" className={classes.link}>Database Docs</a></p>
         <p><a href="https://github.com/shabados" className={classes.link}>Shabad OS GitHub</a></p>
       </Section>
     </Content>
